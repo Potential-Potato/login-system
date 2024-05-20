@@ -42,7 +42,7 @@ try {
 
         .table-container {
             position: fixed;
-            top: 3rem;
+            top: 10rem;
             left: 3rem;
             right: 3rem;
             display: flex;
@@ -114,6 +114,9 @@ try {
 
         .add-button {
             border: none;
+            position: fixed;
+            top: 7.5rem;
+            right: 3.5rem;
             background: url('./img/add-button.png') center/cover no-repeat; 
             width: 2rem; 
             height: 2rem; 
@@ -151,9 +154,19 @@ try {
             transform: scale(1.1); /* Increase the size on hover */
         }
 
+        h3{
+            position:fixed;
+            top: 5rem;
+            color: rgb(253, 253, 253);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
+    <h3>User Accounts</h3>
+    <button class="add-button" onclick="showRegistrationForm()"></button>
     <div class="table-container">
         <div class="table-items">
             <div>ID</div>
@@ -171,7 +184,6 @@ try {
                 <div><?php echo htmlspecialchars($user['email']); ?></div>
                 <div><?php echo htmlspecialchars($user['username']); ?></div>
                 <div class="buttons">
-                    <button class="add-button" onclick="showRegistrationForm()"></button>
                     <button class="update-button" onclick="showUpdateForm(
                         '<?php echo htmlspecialchars($user['tbl_user_id']); ?>',
                         '<?php echo htmlspecialchars(addslashes($user['first_name'])); ?>',
