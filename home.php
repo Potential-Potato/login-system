@@ -33,7 +33,7 @@ try {
         body {
             display: flex;
             justify-content: center;
-            background: url('./img/frieren.jpeg');
+            background: url('./img/frieren2.jpeg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
