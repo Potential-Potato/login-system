@@ -92,8 +92,8 @@ try {
 
         .buttons{
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: space-around;
+            justify-content: space-evenly;
         }
 
         .exit-button{
@@ -134,8 +134,6 @@ try {
             width: 2rem; 
             height: 2rem; 
             cursor: pointer;
-            margin-right: 1rem;
-            margin-left: 1rem;
         }
 
         .update-button:hover {
